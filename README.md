@@ -13,9 +13,13 @@
 ## 📸 Screenshots
 
 <!-- Add screenshots here once you have them. See README guide for how. -->
-![App Screenshot](assets/screenshot1.png)
-![App Screenshot](assets/screenshot2.png)
-![App Screenshot](assets/screenshot3.png)
+<table>
+  <tr>
+    <td><img src="assets/screenshot1.png" width="100%"/></td>
+    <td><img src="assets/screenshot2.png" width="100%"/></td>
+    <td><img src="assets/screenshot3.png" width="100%"/></td>
+  </tr>
+</table>
 ---
 
 ## ✨ Features
