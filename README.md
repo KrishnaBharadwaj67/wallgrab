@@ -1,6 +1,6 @@
 # WallGrab 🎨
 
-### What is WallGrab? (Explained like you're 5!)
+### What is WallGrab? 
 Imagine you have a magic picture frame on your desk, and you want to put the coolest, prettiest, highest-quality superhero and space pictures in it. But finding these pictures on the internet is like looking for a specific shiny pebble on a giant beach. And sometimes, grumpy trolls (website guards) don't want to let you take the pictures!
 
 **WallGrab** is a super-fast robot friend that does the looking for you. You just point it at a website, and it zooms across the internet, sneaks past the grumpy trolls, grabs the absolute biggest and sparkliest versions of the pictures (4K quality!), and brings them right to your computer. It does all the hard work so you can just enjoy the pretty art!
