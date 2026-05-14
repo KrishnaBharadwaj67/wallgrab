@@ -1,47 +1,65 @@
-# WallGrab 🎨
+# WallGrab
 
-### What is WallGrab? 
-Imagine you have a magic picture frame on your desk, and you want to put the coolest, prettiest, highest-quality superhero and space pictures in it. But finding these pictures on the internet is like looking for a specific shiny pebble on a giant beach. And sometimes, grumpy trolls (website guards) don't want to let you take the pictures!
+![Rust](https://img.shields.io/badge/Rust-000000?style=for-the-badge&logo=rust&logoColor=white)
+![React](https://img.shields.io/badge/React-20232A?style=for-the-badge&logo=react&logoColor=61DAFB)
+![Electron](https://img.shields.io/badge/Electron-191970?style=for-the-badge&logo=Electron&logoColor=white)
+![TypeScript](https://img.shields.io/badge/TypeScript-007ACC?style=for-the-badge&logo=typescript&logoColor=white)
+![TailwindCSS](https://img.shields.io/badge/Tailwind_CSS-38B2AC?style=for-the-badge&logo=tailwind-css&logoColor=white)
 
-**WallGrab** is a super-fast robot friend that does the looking for you. You just point it at a website, and it zooms across the internet, sneaks past the grumpy trolls, grabs the absolute biggest and sparkliest versions of the pictures (4K quality!), and brings them right to your computer. It does all the hard work so you can just enjoy the pretty art!
+> A high-performance desktop application for discovering and downloading 4K wallpapers, built with a Rust-powered native scraping engine and a modern React frontend.
 
 ---
 
-## 🚀 Features
+## 📸 Screenshots
 
-*   **Super Fast Scraping Engine:** Built in Rust using `napi-rs` for non-blocking, lightning-fast web scraping.
-*   **Smart Hunting & 404 Fallbacks:** Intelligently infers 4K image URLs directly from listing pages to save bandwidth, with a recursive fallback to detail pages if the guess fails.
-*   **Bypasses Bot Detection:** Utilizes customized headers to navigate Cloudflare and hotlink protections effortlessly.
-*   **Modern Glassmorphism UI:** A stunning React frontend styled with Tailwind CSS and Framer Motion for smooth, dynamic animations.
-*   **Desktop Integrated:** Packaged as a standalone executable via Electron Forge for seamless Windows/macOS/Linux usage.
+<!-- Add screenshots here once you have them. See README guide for how. -->
+*Screenshots coming soon.*
+
+---
+
+## ✨ Features
+
+- **Native Scraping Engine** — Core scraper written in Rust via `napi-rs`, delivering non-blocking, high-throughput performance
+- **Intelligent 4K Resolution Detection** — Directly infers high-resolution (3840×2160) URLs from listing pages, avoiding unnecessary network requests
+- **Automatic Fallback Parsing** — If a guessed URL returns a 404, the engine automatically fetches the detail page and retries with the correct resolution
+- **Bot Detection Bypass** — Spoofs browser headers (User-Agent, Referer, Accept) to navigate Cloudflare and hotlink protection on target sites
+- **Multi-Site Support** — Scraping strategies for `4kwallpapers.com` and `wall.alphacoders.com`, with site-specific logic for each
+- **Modern UI** — Glassmorphism-styled interface built with Tailwind CSS and Framer Motion animations
+- **Cross-Platform Desktop App** — Packaged as a standalone executable via Electron Forge for Windows, macOS, and Linux
+
+---
 
 ## 🛠️ Tech Stack
 
-*   **Frontend:** React, TypeScript, Tailwind CSS, Framer Motion, Vite
-*   **Backend (Native Module):** Rust, `napi-rs`
-*   **Desktop Wrapper:** Electron, Electron Forge
+| Layer | Technologies |
+|---|---|
+| Frontend | React, TypeScript, Tailwind CSS, Framer Motion, Vite |
+| Native Backend | Rust, napi-rs |
+| Desktop Wrapper | Electron, Electron Forge |
 
-## 📦 Getting Started
+---
+
+## 🚀 Getting Started
 
 ### Prerequisites
-Make sure you have the following installed:
-*   [Node.js](https://nodejs.org/)
-*   [Rust & Cargo](https://rustup.rs/) (for compiling the native scraper)
+
+- [Node.js](https://nodejs.org/) (v18 or later recommended)
+- [Rust & Cargo](https://rustup.rs/) — required to compile the native scraping module
 
 ### Installation
 
-1. Clone the repository:
+1. **Clone the repository:**
    ```bash
-   git clone https://github.com/yourusername/wallgrab.git
+   git clone https://github.com/KrishnaBharadwaj67/wallgrab.git
    cd wallgrab
    ```
 
-2. Install the JavaScript dependencies:
+2. **Install JavaScript dependencies:**
    ```bash
    npm install
    ```
 
-3. Build the Rust native module (if you make changes to the Rust code):
+3. **Build the Rust native module:**
    ```bash
    cd native
    npm install
@@ -49,23 +67,35 @@ Make sure you have the following installed:
    cd ..
    ```
 
-### Running Locally
+### Running in Development
 
-To start the app in development mode with hot-reloading:
 ```bash
 npm start
 ```
 
-### Packaging for Production
+This starts the app with hot-reloading enabled.
 
-To create a standalone, double-clickable executable for your current operating system:
+### Building for Production
+
 ```bash
 npm run make
 ```
-The packaged application and installer will be generated and placed in the `out/` directory.
 
-## 🤝 Contributing
-Contributions, issues, and feature requests are welcome! 
+The packaged installer will be output to the `out/` directory.
+
+---
+
+## 🏗️ Architecture
+
+WallGrab uses a two-process architecture:
+
+- **Renderer Process (React + Vite):** Handles the UI, search input, and wallpaper grid display
+- **Main Process (Electron + Rust via napi-rs):** Executes the native scraping and downloading logic
+
+The Rust module is compiled to a `.node` binary and loaded directly into the Electron main process via `napi-rs`, bypassing the overhead of a separate HTTP server or subprocess.
+
+---
 
 ## 📝 License
-This project is licensed under the MIT License.
+
+This project is licensed under the [MIT License](LICENSE).
