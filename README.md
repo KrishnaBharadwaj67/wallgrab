@@ -13,8 +13,9 @@
 ## 📸 Screenshots
 
 <!-- Add screenshots here once you have them. See README guide for how. -->
-![App Screenshot](assets/screenshot.png)
-
+![App Screenshot](assets/Screenshot 2026-05-15 002926.png)
+![App Screenshot](assets/Screenshot 2026-05-15 003029.png)
+![App Screenshot](assets/Screenshot 2026-05-15 003106.png)
 ---
 
 ## ✨ Features
