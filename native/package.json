@@ -1,0 +1,9 @@
+{
+  "name": "wallgrab-native",
+  "version": "1.0.0",
+  "main": "index.js",
+  "napi": {
+    "binaryName": "wallgrab_native",
+    "targets": []
+  }
+}

@@ -1,0 +1,10 @@
+C:\Users\KRISHNA\Documents\Projects\claude code\wallgrab\native\target\x86_64-pc-windows-msvc\release\deps\ego_tree-a59d4120f5b94306.d: C:\Users\KRISHNA\.cargo\registry\src\index.crates.io-1949cf8c6b5b557f\ego-tree-0.10.0\src\lib.rs C:\Users\KRISHNA\.cargo\registry\src\index.crates.io-1949cf8c6b5b557f\ego-tree-0.10.0\src\iter.rs C:\Users\KRISHNA\.cargo\registry\src\index.crates.io-1949cf8c6b5b557f\ego-tree-0.10.0\src\display.rs C:\Users\KRISHNA\.cargo\registry\src\index.crates.io-1949cf8c6b5b557f\ego-tree-0.10.0\src\sort.rs
+
+C:\Users\KRISHNA\Documents\Projects\claude code\wallgrab\native\target\x86_64-pc-windows-msvc\release\deps\libego_tree-a59d4120f5b94306.rlib: C:\Users\KRISHNA\.cargo\registry\src\index.crates.io-1949cf8c6b5b557f\ego-tree-0.10.0\src\lib.rs C:\Users\KRISHNA\.cargo\registry\src\index.crates.io-1949cf8c6b5b557f\ego-tree-0.10.0\src\iter.rs C:\Users\KRISHNA\.cargo\registry\src\index.crates.io-1949cf8c6b5b557f\ego-tree-0.10.0\src\display.rs C:\Users\KRISHNA\.cargo\registry\src\index.crates.io-1949cf8c6b5b557f\ego-tree-0.10.0\src\sort.rs
+
+C:\Users\KRISHNA\Documents\Projects\claude code\wallgrab\native\target\x86_64-pc-windows-msvc\release\deps\libego_tree-a59d4120f5b94306.rmeta: C:\Users\KRISHNA\.cargo\registry\src\index.crates.io-1949cf8c6b5b557f\ego-tree-0.10.0\src\lib.rs C:\Users\KRISHNA\.cargo\registry\src\index.crates.io-1949cf8c6b5b557f\ego-tree-0.10.0\src\iter.rs C:\Users\KRISHNA\.cargo\registry\src\index.crates.io-1949cf8c6b5b557f\ego-tree-0.10.0\src\display.rs C:\Users\KRISHNA\.cargo\registry\src\index.crates.io-1949cf8c6b5b557f\ego-tree-0.10.0\src\sort.rs
+
+C:\Users\KRISHNA\.cargo\registry\src\index.crates.io-1949cf8c6b5b557f\ego-tree-0.10.0\src\lib.rs:
+C:\Users\KRISHNA\.cargo\registry\src\index.crates.io-1949cf8c6b5b557f\ego-tree-0.10.0\src\iter.rs:
+C:\Users\KRISHNA\.cargo\registry\src\index.crates.io-1949cf8c6b5b557f\ego-tree-0.10.0\src\display.rs:
+C:\Users\KRISHNA\.cargo\registry\src\index.crates.io-1949cf8c6b5b557f\ego-tree-0.10.0\src\sort.rs:

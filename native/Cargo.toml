@@ -1,0 +1,31 @@
+[package]
+name = "wallgrab-native"
+version = "1.0.0"
+edition = "2021"
+
+[lib]
+crate-type = ["cdylib"]
+
+[dependencies]
+# NAPI-RS for Node.js addon bridging
+napi = { version = "3", default-features = false, features = ["napi4", "async"] }
+napi-derive = "3"
+
+# Async runtime
+tokio = { version = "1", features = ["full"] }
+
+# HTTP Client (using rustls to avoid OpenSSL dependency issues on Windows)
+reqwest = { version = "0.12", default-features = false, features = ["rustls-tls", "json"] }
+
+# HTML Parsing
+scraper = "0.22"
+
+# URL handling
+url = "2.5"
+
+# Serialization
+serde = { version = "1.0", features = ["derive"] }
+serde_json = "1.0"
+
+[build-dependencies]
+napi-build = "2"

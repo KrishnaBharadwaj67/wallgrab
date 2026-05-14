@@ -1,0 +1,4 @@
+{"kind": "interface", "name": "WallpaperInfo", "js_doc": "", "def": "thumbnailUrl: string\\nfullUrl: string\\nalt: string\\nwidth?: number\\nheight?: number", "original_name": "WallpaperInfo"}
+{"kind": "interface", "name": "ScrapeResult", "js_doc": "", "def": "wallpapers: Array<WallpaperInfo>\\npageTitle: string\\ntotalFound: number\\nerrors: Array<string>", "original_name": "ScrapeResult"}
+{"kind": "fn", "name": "scrapeUrl", "js_doc": "", "def": "function scrapeUrl(url: string): Promise<ScrapeResult>"}
+{"kind": "fn", "name": "downloadWallpaper", "js_doc": "", "def": "function downloadWallpaper(url: string, savePath: string): Promise<string>"}
