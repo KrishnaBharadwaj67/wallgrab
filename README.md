@@ -13,7 +13,7 @@
 ## 📸 Screenshots
 
 <!-- Add screenshots here once you have them. See README guide for how. -->
-*Screenshots coming soon.*
+![App Screenshot](assets/screenshot.png)
 
 ---
 
